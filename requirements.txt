@@ -1,0 +1,28 @@
+# SAMCo — Requirements
+# Install: pip install -r requirements.txt
+
+# Core deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Segment Anything Model (Meta)
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git
+
+# DINOv2 loaded via torch.hub — no pip install needed
+# torch.hub.load("facebookresearch/dinov2", "dinov2_vits14")
+
+# Scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+opencv-python>=4.7.0
+
+# Image / visualization
+Pillow>=9.4.0
+matplotlib>=3.7.0
+
+# Demo UI
+gradio>=4.0.0
+
+# Utilities
+tqdm>=4.65.0

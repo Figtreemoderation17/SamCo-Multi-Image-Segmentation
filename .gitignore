@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Output files
+output/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Large model weights
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Temporary files
+*.tmp
+*.temp
