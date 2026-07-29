@@ -1,11 +1,47 @@
-# SAMCo: Automatic Co-segmentation via Semantic Consensus Prompting
-
-**Course Project — EE655 Computer Vision and Deep Learning, IIT Kanpur (2025-26 Semester II)**
-
+# 🧠 SAMCo: Multi-Image Co-Segmentation using Semantic Consensus Prompting
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red.svg)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-SAM-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ---
 
-## What This Project Does
+## 📑 Table of Contents
 
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Problem Statement](#problem-statement)
+- [Methodology](#methodology)
+- [Results](#results)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Interactive Demo](#interactive-demo)
+- [Evaluating on a Dataset](#evaluating-on-a-dataset)
+- [Project File Structure](#project-file-structure)
+- [File-by-File Explanation](#file-by-file-explanation)
+- [Tunable Parameters](#tunable-parameters)
+- [Dependencies](#dependencies)
+- [Acknowledgements](#acknowledgements)
+---
+
+## Overview
+
+SAMCo is an AI-powered multi-image co-segmentation framework that automatically discovers and segments the common object appearing across multiple images without requiring manual prompts, labels, or prior knowledge of the object category.
+
+The framework combines DINOv2 feature representations with Meta AI's Segment Anything Model (SAM) and introduces Semantic Consensus Prompting to generate accurate segmentation masks across diverse scenes.
+---
+
+## Tech Stack
+
+- **Programming Language:** Python
+- **Deep Learning Framework:** PyTorch
+- **Vision Foundation Models:** DINOv2, Segment Anything Model (SAM)
+- **Machine Learning:** Scikit-learn
+- **Computer Vision:** OpenCV
+- **Visualization:** Matplotlib
+- **Web Interface:** Gradio
+---
+
+## Problem Statement
 Co-segmentation is the task of finding and precisely outlining a common object across multiple images, without being told what the object is. For example, given five photos each containing a dog, the system should automatically draw an accurate mask around the dog in every photo — even though the dogs are in different poses, backgrounds, and lighting conditions.
 
 SAMCo solves this problem without any manual prompts, without any labelled training data, and without knowing the name of the object. You give it a set of images; it figures out what they have in common and segments it.
@@ -14,8 +50,7 @@ The system works by combining two state-of-the-art models from Meta AI — SAM (
 
 ---
 
-## How It Works 
-
+## 🧠 Methodology
 The pipeline has four steps.
 
 **Step 1 — Feature Extraction.** Each image is passed through DINOv2, a self-supervised Vision Transformer. The model divides each image into a 37x37 grid of small patches and produces a 384-dimensional feature vector for each patch. These vectors capture semantic meaning: patches showing "fur" or "snout" will have similar feature vectors regardless of the image they came from.
@@ -282,3 +317,10 @@ DINOv2 is not a pip package. It is loaded automatically on first run via `torch.
 
 ---
 
+## Acknowledgements
+
+This project was developed as part of the EE655 – Computer Vision and Deep Learning course at IIT Kanpur.
+
+It builds upon:
+- Segment Anything Model (Meta AI)
+- DINOv2 (Meta AI)
